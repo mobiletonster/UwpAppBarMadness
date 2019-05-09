@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="ChevronMadness.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChevronMadness"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Padding="20">
+            <TextBlock Text="AppBarButton Madness" FontSize="30"></TextBlock>
+            <Rectangle Height="1" Fill="DarkGray"></Rectangle>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <AppBarButton Icon="Audio" Label="Audio" Background="#FFEFD9F5"></AppBarButton>
+                <AppBarButton Icon="CalendarDay" Label="Calendar" LabelPosition="Collapsed" VerticalAlignment="Stretch" Background="#FFCEE8EB"></AppBarButton>
+                <AppBarButton Background="#FFF6F89A">
+                    <Border BorderBrush="Crimson" BorderThickness="1">
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEBE8;"></FontIcon>
+                    </Border>
+                </AppBarButton>
+                <AppBarButton Background="#FFDCBEF2">
+                    <Border BorderBrush="OrangeRed" BorderThickness="1">
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xF11B;"></FontIcon>
+                    </Border>
+                </AppBarButton>
+                <AppBarButton Background="#FFD3F7C7">
+                    <Border BorderBrush="#FFFE4C4C" BorderThickness="1,1,1,1">
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE011;"></FontIcon>
+                    </Border>
+                    <AppBarButton.Flyout>
+                        <MenuFlyout>
+                            <MenuFlyoutItem>Earth</MenuFlyoutItem>
+                            <MenuFlyoutItem>Wind</MenuFlyoutItem>
+                            <MenuFlyoutItem>Fire</MenuFlyoutItem>
+                        </MenuFlyout>
+                    </AppBarButton.Flyout>
+                </AppBarButton>
+                <AppBarToggleButton Icon="Camera" LabelPosition="Collapsed" VerticalAlignment="Center" Background="#FFCDE3DF" ></AppBarToggleButton>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
