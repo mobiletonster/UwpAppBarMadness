@@ -34,6 +34,7 @@
                             <MenuFlyoutItem>Earth</MenuFlyoutItem>
                             <MenuFlyoutItem>Wind</MenuFlyoutItem>
                             <MenuFlyoutItem>Fire</MenuFlyoutItem>
+                            <MenuFlyoutItem>Water</MenuFlyoutItem>
                         </MenuFlyout>
                     </AppBarButton.Flyout>
                 </AppBarButton>
