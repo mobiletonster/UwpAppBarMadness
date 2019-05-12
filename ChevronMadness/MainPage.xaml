@@ -41,8 +41,20 @@
                         </MenuFlyout>
                     </AppBarButton.Flyout>
                 </AppBarButton>
-                <Button VerticalAlignment="Stretch" Height="55" Width="55" BorderThickness="1" Style="{StaticResource AppBarButtonFlyout}">
+                <Button VerticalAlignment="Stretch"  Width="55" BorderThickness="0" Style="{StaticResource AppBarButtonFlyout}">
                     <SymbolIcon Symbol="Emoji"></SymbolIcon>
+                    <Button.Flyout>
+                        <MenuFlyout>
+                            <MenuFlyoutItem>Earth</MenuFlyoutItem>
+                            <MenuFlyoutItem>Wind</MenuFlyoutItem>
+                            <MenuFlyoutItem>Fire</MenuFlyoutItem>
+                            <MenuFlyoutItem>Water</MenuFlyoutItem>
+                            <MenuFlyoutItem>Air</MenuFlyoutItem>
+                        </MenuFlyout>
+                    </Button.Flyout>
+                </Button>
+                <Button  VerticalAlignment="Stretch" Width="55" Style="{StaticResource AppBarButtonFlyout}">
+                    <SymbolIcon Symbol="Read"></SymbolIcon>
                     <Button.Flyout>
                         <MenuFlyout>
                             <MenuFlyoutItem>Earth</MenuFlyoutItem>
